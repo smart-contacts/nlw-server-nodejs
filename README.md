@@ -11,9 +11,41 @@ Informação sobre tecnologia, dicas, tutoriais, mini-cursos e muito mais.
 
 ## Junho/2020
 
-### Código desenvolvido durante a "Next Level Week" da Rocketseat.
+### Código desenvolvido durante a "Next Level Week" da Rocketseat. Para instalar e executar o projeto, siga as instruções abaixo.
 
-<hr>
+## Instalar as dependências
+
+```
+$ npm install
+```
+
+## Knex
+
+### Utilização de migrations
+
+O arquivo **knexfile.ts** no diretório raiz da API configura os recursos a serem considerados para as migrations.
+
+### Rodar as migrations
+
+Execute o comando para rodar as migrations:
+
+```
+$ npm run knex:migrate
+```
+
+### Rodar as seeds
+
+Execute o comando para rodar as seeds:
+
+```
+$ npm run knex:seed
+```
+
+## Executar a aplicação
+
+```
+$ npm run dev
+```
 
 [Smart Contacts](https://smartcontacts.com.br)
 
