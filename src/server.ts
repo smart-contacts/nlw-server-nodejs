@@ -2,6 +2,9 @@ import express from 'express';
 import cors from 'cors';
 import path from 'path';
 import routes from './routes';
+import {errors} from 'celebrate';
+
+import env from './config/env';
 
 const app = express();
 
@@ -11,4 +14,6 @@ app.use(routes);
 
 app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
 
-app.listen(3333);
+app.use(errors());
+
+app.listen(env.port);
